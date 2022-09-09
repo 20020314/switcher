@@ -2,7 +2,7 @@
   "log_level": "debug",
   "rules": [
     {
-      "name": "普通模式示例",
+      "name": "x-ui",
       "listen": "0.0.0.0:1234",
       "blacklist":{
         "1.2.3.4":true,
@@ -10,7 +10,7 @@
       },
       "targets": [
         {
-          "address": "127.0.0.1:80"
+          "address": "8.210.87.61:80"
         }
       ]
     }
