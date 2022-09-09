@@ -2,19 +2,15 @@
   "log_level": "debug",
   "rules": [
     {
-      "name": "test",
-      "listen": ":1234",
-      "enable_regexp": false,
-      "first_packet_timeout": 5000,
-      "blacklist": null,
+      "name": "普通模式示例",
+      "listen": "0.0.0.0:1234",
+      "blacklist":{
+        "1.2.3.4":true,
+        "114.114.114.114":true
+      },
       "targets": [
         {
-          "regexp": "^(GET|POST|HEAD|DELETE|PUT|CONNECT|OPTIONS|TRACE)",
           "address": "127.0.0.1:80"
-        },
-        {
-          "regexp": "^SSH",
-          "address": "127.0.0.1:22"
         }
       ]
     }
